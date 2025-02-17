@@ -20,10 +20,9 @@ Indicates the recipient of the email.
 ## Authentication Checks (SPF, DKIM, DMARC)  
 
 ### SPF Failure Detection  
-spf=fail (google.com: domain of billjobs@microapple.com does not designate 93.99.104.210 as permitted sender)
 
-yaml
-Copy
+**spf=fail (google.com: domain of billjobs@microapple.com does not designate 93.99.104.210 as permitted sender)**
+
 This means the domain @microapple.com does not authorize 93.99.104.210, making this highly suspicious.  
 
 If SPF fails, it is recommended to:  

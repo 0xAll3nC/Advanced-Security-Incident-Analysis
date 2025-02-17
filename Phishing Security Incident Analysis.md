@@ -103,7 +103,7 @@ Inside **Money.xlsx**, we discovered a third hidden sheet (**Sheet3**) that cont
 
 After decoding, it revealed a **location**:  
 **The Martian Colony, Beside Interplanetary Spaceport.**  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_sheet3_cyberchef.png.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_sheet3_cyberchef.png)  
 
 ---
 

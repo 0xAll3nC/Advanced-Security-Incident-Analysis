@@ -51,12 +51,12 @@ If SPF fails, it is recommended to:
 
 ### Step 1: Decode Email Body  
 We extracted and decoded the first **Base64-encoded content** to reveal the phishing message.  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_anaysis_-_first_base64_decode.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_first_base64_decode.png)  
 
 ### Step 2: Decode Attachment  
 The email contained an attachment **PuzzleToCoCanDa.pdf**, encoded in Base64.  
 We decoded it, but the content was unreadable.  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_attachment_-decode_base64.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_attachment_decode_base64.png)  
 
 ---
 
@@ -64,11 +64,11 @@ We decoded it, but the content was unreadable.
 ## File Type Analysis: Is the Attachment Really a PDF?  
 Upon further inspection, the extracted file signature did **not** match a PDF.  
 We converted the content into **hex format** for further analysis.  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_attachment_-deoced_b64-hex.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_attachment_deoced_b64_hex.png)  
 
 Using **Gary Kessler’s File Signature Database**, we determined that:  
 - The file starts as a **ZIP archive** but was disguised as a **PDF**.  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_gary_kessler_-_zip__pdf_file.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_gary_kessler_zip_pdf_file.png)  
 
 ---
 
@@ -81,29 +81,29 @@ Inside, we found:
 2. **GoodJobMajor.pdf**  
 3. **A hidden .xlsx file (Money.xlsx)**  
 
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_dauthercrown.png)  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_goodjobmajor_pdf.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_daughterscrown.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_goodjobmajor_pdf.png)  
 
 ---
 
 
 ## Hex Analysis of Hidden Files  
 We inspected **DaughtersCrown.jpeg** in HxD and verified it was a **valid JPEG**.  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_hxd_-_daughterscrown_-_garykessler.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_hxd_daughterscrown_garykessler.png)  
 
 Similarly, **GoodJobMajor.pdf** was verified using the **PDF file signature**.  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_hxd_-_goodjobmajor-_garykessler.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_hxd_goodjobmajor_garykessler.png)  
 
 ---
 
 
 ## Hidden Data in Money.xlsx  
 Inside **Money.xlsx**, we discovered a third hidden sheet (**Sheet3**) that contained **Base64-encoded text**.  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_money_xlsx_-_sheet_3.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_money_xlsx_sheet3.png)  
 
 After decoding, it revealed a **location**:  
 **The Martian Colony, Beside Interplanetary Spaceport.**  
-[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_-_sheet3_-_cyberchef.png)  
+[![View Image](https://img.shields.io/badge/View_Image-Click_Here-blue?style=for-the-badge)](images/email_analysis_sheet3_cyberchef.png.png)  
 
 ---
 

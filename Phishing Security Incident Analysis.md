@@ -1,4 +1,4 @@
-# Advanced Security Incident Analysis
+# Phishing Security Incident Analysis
 
 ## Overview  
 Email is one of the primary attack vectors used by hackers to extract sensitive information. This analysis explores how phishing emails manipulate email headers, embedded content, and attachments to trick users into revealing personal or corporate information.  

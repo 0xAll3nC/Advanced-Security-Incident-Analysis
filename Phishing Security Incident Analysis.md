@@ -150,8 +150,3 @@ This **phishing security incident analysis** uncovered a **well-crafted attack**
 By understanding how these attacks work, **SOC analysts and threat hunters** can better **detect, analyze, and mitigate phishing threats**.
 
 ---
-
-
-### Final Notes  
-- **Upload all images** to the `images/` folder inside your **GitHub repository**.  
-- **Now, when users click on "View Image", they will be able to open the images directly in the repository.** 🚀
